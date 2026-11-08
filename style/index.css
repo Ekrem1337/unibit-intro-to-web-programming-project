@@ -3,6 +3,7 @@
   padding: 0;
   font-family: Montserrat, "Times New Roman";
   text-decoration: none;
+  z-index: 1;
 }
 a:visited {
   color: inherit;
@@ -17,7 +18,7 @@ ul {
 }
 .bg-video {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   bottom: 0;
   right: 0;
 }
@@ -69,7 +70,8 @@ header > nav > ul {
 #landing {
   display: flex;
   flex-direction: column;
-  gap: 25em;
+  gap: 15em;
+  background-color: gainsboro;
 }
 #main-car {
   display: flex;

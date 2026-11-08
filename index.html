@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="style/responsive.css" />
     <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/filter.css" />
     <title>Document</title>
   </head>
   <body>
@@ -116,41 +117,545 @@
         </section>
       </main>
 
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
-      <p>as</p>
+      <section id="car-search">
+        <h1>Най-популярни</h1>
+        <section class="search">
+          <div class="filter">
+            <h2>Филтър</h2>
+            <section class="filter-category">
+              <label for="type">Категория</label>
+              <select name="type" id="type">
+                <option value="coupe">Купе</option>
+                <option value="coupe">Седан</option>
+                <option value="coupe">Комби</option>
+                <option value="coupe">Джип</option>
+              </select>
+            </section>
+            <section class="filter-category">
+              <label for="type">Двигател</label>
+              <select name="type" id="type">
+                <option value="coupe">Бензин</option>
+                <option value="coupe">Дизел</option>
+                <option value="coupe">Хибрид</option>
+                <option value="coupe">Електрически</option>
+              </select>
+            </section>
+            <section class="filter-category">
+              <label for="volume" class="value">10 000€</label>
+              <input
+                type="range"
+                id="volume"
+                name="volume"
+                min="10000"
+                max="500000"
+              />
+              <label for="volume">Цена</label>
+            </section>
+          </div>
+          <div class="cars">
+            <div class="car-card">
+              <div class="img-container">
+                <img
+                  src="img/Mercedes-Benz-S-class-W223.jpg"
+                  class="car-img"
+                  alt=""
+                />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Mercedes S class</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2023</p>
+                  <p>•</p>
+                  <p class="car-mileage">2000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Седан</p>
+                  </div>
+                </div>
+                <h5 class="car-price">80 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/1-18.webp" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">BMW M4 Competition</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2023</p>
+                  <p>•</p>
+                  <p class="car-mileage">2000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img
+                  src="img/8-series-gran-coupe-2020.jpg"
+                  class="car-img"
+                  alt=""
+                />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">BMW M4 Competition</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2023</p>
+                  <p>•</p>
+                  <p class="car-mileage">2000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/840d_2021.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">BMW M4 Competition</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2023</p>
+                  <p>•</p>
+                  <p class="car-mileage">2000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img
+                  src="img/audi-rs-4-avant-b9-facelift-2019.webp"
+                  class="car-img"
+                  alt=""
+                />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Aurdi RS4 Avant</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2019</p>
+                  <p>•</p>
+                  <p class="car-mileage">4000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Комби</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img
+                  src="img/bmw-x5-m-mhx5-700-by-manhart.jpg"
+                  class="car-img"
+                  alt=""
+                />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">BMW X5M Competition</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2023</p>
+                  <p>•</p>
+                  <p class="car-mileage">2000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Джип</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/boat.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">BMW M5 Competition</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2026</p>
+                  <p>•</p>
+                  <p class="car-mileage">0km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/c63_2021_coupejpg.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Mercedes-Benz C63 AMG</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img
+                  src="img/car-Mercedes-Benz-S-63-AMG---1748268064310856862_big--25052617010293670100.jpg"
+                  class="car-img"
+                  alt=""
+                />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Mercedes-Benz S63 AMG</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2025</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Седан</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/cayenne_2027.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Porsche Cayenne</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2026</p>
+                  <p>•</p>
+                  <p class="car-mileage">0km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Джип</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/cls.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Mercedes-Benz CLS63 AMG</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">15000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Седан</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/e63_2015.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Mercedes-Benz E63 AMG</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2015</p>
+                  <p>•</p>
+                  <p class="car-mileage">30000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/golf_gti_2021.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">VW Golf GTI</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">9000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Седан</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/gt-500.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Ford Mustang Shelby</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/images.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Ford Mustang Shelby</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/lexus-is.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Lexus IS</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/m5.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">BMW M5</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Седан</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/macan_2022.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Porsche Macan</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Джип</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/panamera.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Porsche Panamera</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Седан</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/q7.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Audi Q7</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2025</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Джип</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/rs5.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Audi RS5</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2022</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Седан</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/rs6.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Audi RS6</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2024</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Комби</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/rs7.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Audi RS7</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Седан</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/turbo-2019.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Porsche Turbo S</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2019</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/turbo-s.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Porsche Turbo S</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2021</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Kyпе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/x6m.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">BMW X6M</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2025</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Джип</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img
+                  src="img/2016-mercedes-amg-gt-s-photo-648142-s-986x603.avif"
+                  class="car-img"
+                  alt=""
+                />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">Mercedes-Benz AMG GTS</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2019</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Купе</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+            <div class="car-card">
+              <div class="img-container">
+                <img src="img/x6m.jpg" class="car-img" alt="" />
+              </div>
+              <div class="car-spec">
+                <h4 class="car-name">BMW X6M</h4>
+                <div class="main-spec">
+                  <p class="car-yeas">2025</p>
+                  <p>•</p>
+                  <p class="car-mileage">10000km</p>
+                  <div class="car-type-container">
+                    <p class="car-type">Джип</p>
+                  </div>
+                </div>
+                <h5 class="car-price">98 000€</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </section>
   </body>
 </html>
